@@ -2,7 +2,7 @@ body {
     background: url(../images/hypnotize.png)
 }
 #everything {
-    margin: 15px 20px;
+    margin: 15px auto;
 }
 #header {
     text-align: center;
@@ -16,6 +16,8 @@ body {
     -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    width: 90%;
+    margin: auto;
 }
 #instructions {
     text-align: center;
@@ -35,33 +37,44 @@ body {
     font-family: 'Orbitron', sans-serif;
     height: 150px;
     letter-spacing: 3px;
+    margin-bottom: 15px;
     background: url(../images/what-the-hex.png);
     -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 }
-#targetNumber{
+#targetBox{
     border: #5fe1fa outset;
 }
-#yourScore {
+#targetNumber {
+    font-size: 40px;
+}
+#yourScoreBox {
     border: #fff450 outset;
 }
-#crystals {
-    margin: 15px auto;
+#yourScore {
+    font-size: 40px;
 }
 #winLoss {
     text-align: center;
     font-family: 'Orbitron', sans-serif;
     height: 125px;
+    margin-top: 15px;
     letter-spacing: 5px;
     background: url(../images/what-the-hex.png);
     -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 }
-#win {
+#winbox {
     border: #fff450 outset;
 }
-#loss {
+#win {
+    font-size: 40px;
+}
+#lossbox {
     border: #5fe1fa outset;
+}
+#loss {
+    font-size: 40px;
 }
