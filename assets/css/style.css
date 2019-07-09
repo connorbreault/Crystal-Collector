@@ -12,7 +12,10 @@ body {
     letter-spacing: 15px;
     text-shadow: 2px 2px 2px #FFF450;
     border: outset #fff450;
-    background: url(../images/what-the-hex.png)
+    background: url(../images/what-the-hex.png);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 }
 #instructions {
     text-align: center;
@@ -22,7 +25,10 @@ body {
     margin: 20px auto;
     border: #5fe1fa groove;
     text-shadow: 2px 2px 2px #5fe1fa;
-    background: url(../images/qbkls.png)
+    background: url(../images/qbkls.png);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 }
 #scoreBoard {
     text-align: center;
@@ -30,7 +36,10 @@ body {
     height: 150px;
     text-decoration: underline;
     letter-spacing: 3px;
-    background: url(../images/what-the-hex.png)
+    background: url(../images/what-the-hex.png);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 }
 #targetNumber{
     border: #5fe1fa outset;
@@ -47,7 +56,10 @@ body {
     height: 150px;
     text-decoration: underline;
     letter-spacing: 5px;
-    background: url(../images/what-the-hex.png)
+    background: url(../images/what-the-hex.png);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 }
 #win {
     border: #fff450 outset;
