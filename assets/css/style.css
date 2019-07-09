@@ -1,0 +1,57 @@
+body {
+    background: url(../images/hypnotize.png)
+}
+#everything {
+    margin: 15px 20px;
+}
+#header {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Orbitron', sans-serif;
+    color: #5fe1fa;
+    letter-spacing: 15px;
+    text-shadow: 2px 2px 2px #FFF450;
+    border: outset #fff450;
+    background: url(../images/what-the-hex.png)
+}
+#instructions {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Kaushan Script', cursive;
+    width: 75%;
+    margin: 20px auto;
+    border: #5fe1fa groove;
+    text-shadow: 2px 2px 2px #5fe1fa;
+    background: url(../images/qbkls.png)
+}
+#scoreBoard {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    height: 150px;
+    text-decoration: underline;
+    letter-spacing: 3px;
+    background: url(../images/what-the-hex.png)
+}
+#targetNumber{
+    border: #5fe1fa outset;
+}
+#yourScore {
+    border: #fff450 outset;
+}
+#crystals {
+    margin: 15px auto;
+}
+#winLoss {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    height: 150px;
+    text-decoration: underline;
+    letter-spacing: 5px;
+    background: url(../images/what-the-hex.png)
+}
+#win {
+    border: #fff450 outset;
+}
+#loss {
+    border: #5fe1fa outset;
+}
