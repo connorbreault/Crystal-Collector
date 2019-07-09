@@ -10,22 +10,38 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Crystal Collector</title>
 </head>
-<body>
-    
 
-    <script src="./assets/javascript/game.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+<body>
+    <div id="container">
+        <div id="header">Crystal Collector</div>
+        <div id="instructions">You will be given a target number at the start of each round.<br>There are four crystals
+            below. Each crystal will be assigned a random value at the start of the round. By clicking on a crystal you
+            will add that number to your total score.<br>The objective of the game is to match your score with the
+            target number, but you will lose if your score exceeds the target.</div>
+            <div id="targetNumber">Target Number</div>
+            <div id="winloss">Wins : <br>Losses : </div>
+            <div class="row" id="crystals">
+                <div class="col" id="crystalOne"><img src="./assets/images/gemBlue.png" alt=""></div>
+                <div class="col" id="crystalTwo"><img src="./assets/images/gemGreen.png" alt=""></div>
+                <div class="col" id="crystalThree"><img src="./assets/images/gemRed.png" alt=""></div>
+                <div class="col" id="crystalFour"><img src="./assets/images/gemYellow.png" alt=""></div>
+            </div>
+            <div id="yourScoreIs">Your current score is : </div>
+            <div id="yourScore">0</div>
+
+        <script src="./assets/javascript/game.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
