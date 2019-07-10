@@ -55,6 +55,10 @@ body {
 #yourScore {
     font-size: 40px;
 }
+.cryst {
+    display: flex;
+    justify-content: center;
+}
 #winLoss {
     text-align: center;
     font-family: 'Orbitron', sans-serif;

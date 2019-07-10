@@ -12,7 +12,7 @@
 
 // Variables
 
-var targetNumber = 0
+var targetNumber;
 
 var yourScore = 0
 
@@ -50,51 +50,50 @@ var losses = 0
     $("#crystalOne").on("click", function (){
         yourScore = randomNumOne + yourScore
         $("#yourScore").html(yourScore)
+        console.log('your score: ', yourScore)
+        console.log('target score: ', targetNumber)
+        scoreCheck()
     })
     $("#crystalTwo").on("click", function (){
         yourScore = randomNumTwo + yourScore
         $("#yourScore").html(yourScore)
+        scoreCheck()
     })
     $("#crystalThree").on("click", function (){
         yourScore = randomNumThree + yourScore
         $("#yourScore").html(yourScore)
+        scoreCheck()
     })
     $("#crystalFour").on("click", function (){
         yourScore = randomNumFour + yourScore
         $("#yourScore").html(yourScore)
+        scoreCheck()
     })
 
 
     //track your score vs target number
     function scoreCheck(){
-        if (yourScore = targetNumber) {
-            win()
+        if (yourScore === targetNumber) {
+            alert("You win!")
+            wins++
+            $("#win").html(wins)
+            roundStart()
         }
         else if (yourScore > targetNumber) {
-            lose()
+            alert("You lose!")
+            losses++
+            $("#loss").html(losses)
+            roundStart()
         }
         }
-    
-    
-    //wim and lose functions
-    function win() {
-        alert("You win!")
-        wins++
-        $("#win").html(wins)
-        roundStart()
-    }
-    function lose() {
-        alert("You lose!")
-        losses++
-        $("#loss").html(losses)
-        roundStart()
-    }
 
 
     //round reset, sets your score to 0 and randomizes target number & crystal numbers
     function roundStart() {
         targetNumber = Math.floor(Math.random() * 101) + 19
+        $("#targetNumber").html(targetNumber)
         yourScore = 0
+        $("#yourScore").html(yourScore)
         var randomNumOne = Math.floor(Math.random() * 11) + 1
         $("#crystalOne").append(randomNumOne)
         var randomNumTwo = Math.floor(Math.random() * 11) + 1
@@ -103,4 +102,5 @@ var losses = 0
         $("#crystalThree").append(randomNumThree)
         var randomNumFour = Math.floor(Math.random() * 11) + 1
         $("#crystalFour").append(randomNumFour)
+        scoreCheck()
     }
