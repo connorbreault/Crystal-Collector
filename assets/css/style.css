@@ -6,7 +6,7 @@ body {
 }
 #header {
     text-align: center;
-    font-size: 35px;
+    font-size: 25px;
     font-family: 'Orbitron', sans-serif;
     color: #5fe1fa;
     letter-spacing: 15px;
@@ -58,6 +58,9 @@ body {
 .cryst {
     display: flex;
     justify-content: center;
+}
+.col{
+    height: inherit
 }
 #winLoss {
     text-align: center;
